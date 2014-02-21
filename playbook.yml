@@ -1,0 +1,7 @@
+---
+- name: Docker + Ansible Example
+  hosts: local
+  connection: local
+  tasks:
+      - name: What time is it?
+        shell: date >> /var/data/now.txt
